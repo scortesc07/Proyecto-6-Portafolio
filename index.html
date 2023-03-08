@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">scortesc07</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Sebastián Fernando Cortés Cáceres</h1>
+            <h2>Ingeniero Civil Industrial - Desarrollador Full Stack</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Sebastián Cortés.</span> Ingeniero civil industrial y durante mis últmos 4 años me he especializado en todo lo relacionado a la gestión operacional y a la planificación y control operacional, 
+                por lo que decidi realizar un diplomado en Administración de las operaciones con un enfoque a la mejora continua de los procesos, y en base a esta experiencia tome la gran decisión de estudiar y especializarme como
+                 Desarrollador Full Stack con la finalidad de complementar la programación y el diseño de los procesos para lograr la integración de la mejora de los procesos con el desarrollo web.</p>
+            
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-03-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +56 9 83738373
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sebacortes.caceres@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.scortesc07.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Santiago, Chile
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Jefe de planificación y control</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>APRENDER CONSTANTEMENTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>JUEGOS DE NINTENDO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE - ESCALADA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>MASCOTAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Google Data Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MS Proyect</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniero Civil Industrial</h4>
+                        <span class="casa">Universidad Arturo Prat, Iquique</span>
+                        <span class="fecha">2010 - 2017</span>
+                        <p>Profesional altamente capacitado para liderar empresas e instituciones mediante la toma de ecisiones acertadas y creativas, integrando diversas variables, como el marketing, los recursos humanos, materiales, y financieros, para diseñar procesos eficientes que llevarán a conseguir los objetivos de las organizaciones que dirigen.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diplomado en Administración de las operaciones</h4>
+                        <span class="casa">Pontificia Universidad Católica de Chile</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Este diplomado me permitió perfeccionar las herramientas necesarias para gestionar una empresa con altos niveles de eficacia operativa, lo que se traduce en una mayor atención al cliente, mejores productos y reducción de costos. Además, adquirí las habilidades necesarias para realizar diagnósticos y evaluaciones en diferentes áreas de las organizaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Full Stack</h4>
+                        <span class="casa">Universidad del Desarrollo</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Bootcamp que me permitió integrar mis conocimientos como ingeniero civil industrial con la programación, lo que me ha vuelto aún más versátil en el desarrollo web. Ahora tengo habilidades tanto en la parte del cliente (Front End) como en el servidor (Back End), incluyendo la planificación y gestión operacional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asesor de proyecto en la Facultad de Ciencias Jurídicas y Políticas</h4>
+                        <span class="casa">Universidad Arturo Prat</span>
+                        <span class="fecha">2017 - 2017</span>
+                        <p>Este proyecto se enfocó en investigar el nivel de deserción de estudiantes de Derecho en una casa de estudios, y su comparación a nivel nacional. Como resultado, se publicó un artículo científico en una revista peruana. El objetivo principal fue comprender las causas detrás de la deserción y proponer soluciones efectivas para mejorar este indicador en el futuro.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jefe de planificación y control</h4>
+                        <span class="casa">SL Group</span>
+                        <span class="fecha">2020 a la fecha</span>
+                        <p>Como líder del equipo de planificación y control, gestiono y controlo con el Sub Gerente del área todos los procesos operacionales en empresas de aseo y seguridad. Implementamos sistemas informáticos para mejorar y aumentar la eficiencia de los procesos, y generar informes para los gerentes de operaciones y líderes del directorio de la organización.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Developer Junior</h4>
+                        <span class="casa">SL Group</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Recien titulado como Desarrollador Full Stack, pero con la gran oportunidad de poder en poner en práctica mis conocimientos para poder implementar sistemas TI y Apps que permitan una mejoraría en nuestros procesos organizacionales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Lading de venta</h3>
+                        <p>Proyecto enfocado en construir una página "landing" para un negocio con el objetivo en desarrollar una interfza utilizando HTML y CSS en toda su aplicación y para este cadso
+                            se considero la venta de un servicio de planificación y control llamada EPC.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación CRUD</h3>
+                        <p>Proyecto enfocado en construir una aplicación CRUD, puntualmente un listado de tareas que incluya los botones, Agregar, Editar y Borrar un elemento, para este caso se ocupo
+                            como aplicación para una bodega de ingreso y salidas de productos.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Tablero de datos</h3>
+                        <p>Proyecto enfocado en construir una aplicación que consuma una API pública o privada. En este caso se utilizo una API con los datos del
+                            del C-19 para realizar un comparativo entre los casos de Chile v/s Brasil.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Restaurant App</h3>
+                        <p>Proyecto enfocado en la construcción de una aplicación web para un restaurante y para este casos
+                            se desarrollo una app web para un restaurante especializado en la elaboración de pizza caseras.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Aplicación de comercio Electrónico</h3>
+                        <p>Proyecto enfocado en la construcción de una aplicación eCommerce y en esta oportunidad se crea una App que permite la venta de productos de Apple.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="" alt="">
+                    <div class="overlay">
+                        <h3>Portafolio</h3>
+                        <p>Este proyecto esta enfocado en poder generar mi portafolio con la finalidad de poder mostrar a mis futuros potenciale clientes mis proyectos y habilidades para el desarrollo web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Pastene 348, Santiago de Chile
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +56 9 83738373 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: sebacortes.caceres@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
